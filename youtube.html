@@ -7,20 +7,91 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <div class="header">
-  <div class="left">left</div>
-  <div class="middle">
-      <input class="search" type="text" placeholder="Search">
+  <div class="left">
+    <button class="hamburger-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="youtube-logo">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube</span>
+    </div>
   </div>
-  <div class="right">right</div>
+  <div class="middle">
+    <div class="search-container">
+      <input class="search-input" type="text" placeholder="Search" id="searchInput">
+      <button class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+      <button class="mic-btn">
+        <i class="fas fa-microphone"></i>
+      </button>
+    </div>
+  </div>
+  <div class="right">
+    <button class="header-btn">
+      <i class="fas fa-video"></i>
+    </button>
+    <button class="header-btn">
+      <i class="fas fa-bell"></i>
+    </button>
+    <div class="user-avatar">
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </div>
 </div>
-<div class="video-grid">
 
-    <div class="container">
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item active">
+    <i class="fas fa-home"></i>
+    <span>Home</span>
+  </div>
+  <div class="sidebar-item">
+    <i class="fas fa-compass"></i>
+    <span>Explore</span>
+  </div>
+  <div class="sidebar-item">
+    <i class="fas fa-play"></i>
+    <span>Shorts</span>
+  </div>
+  <div class="sidebar-item">
+    <i class="fas fa-list"></i>
+    <span>Subscriptions</span>
+  </div>
+  <hr class="sidebar-divider">
+  <div class="sidebar-item">
+    <i class="fas fa-history"></i>
+    <span>History</span>
+  </div>
+  <div class="sidebar-item">
+    <i class="fas fa-clock"></i>
+    <span>Watch Later</span>
+  </div>
+  <div class="sidebar-item">
+    <i class="fas fa-thumbs-up"></i>
+    <span>Liked Videos</span>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-chip active" data-filter="all">All</div>
+  <div class="filter-chip" data-filter="marvel">Marvel</div>
+  <div class="filter-chip" data-filter="dc">DC</div>
+  <div class="filter-chip" data-filter="anime">Anime</div>
+  <div class="filter-chip" data-filter="movies">Movies</div>
+  <div class="filter-chip" data-filter="series">Series</div>
+</div>
+
+<div class="main-content" id="mainContent">
+<div class="video-grid" id="videoGrid">
+
+    <div class="container" data-category="marvel">
       <a href="https://www.youtube.com/watch?v=eOrNdBpGMv8">
       <img class="thumbnail" src="https://wallpaperaccess.com/full/342047.jpg" alt="Marvel Video Thumbnail"  />
+      <div class="video-duration">2:32</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -34,9 +105,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="dc">
       <a href="https://www.youtube.com/watch?v=3cxixDgHUYw">
       <img class="thumbnail" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/01/collage-maker-01-jan-2023-06-50-pm.jpg" alt="DC Video Thumbnail" />
+      <div class="video-duration">3:45</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -50,9 +122,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="series">
       <a href="https://www.youtube.com/watch?v=M1bhOaLV4FU">
       <img class="thumbnail" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/08/the-boys-season-3.jpg" alt="The Boys Video Thumbnail" />
+      <div class="video-duration">4:21</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -67,9 +140,10 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" data-category="movies">
       <a href="https://www.youtube.com/watch?v=LLAaW1EgyY8">
       <img class="thumbnail" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/Harry-Potter-goblet-of-fire.jpg" alt="Marvel Video Thumbnail" />
+      <div class="video-duration">3:15</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -83,9 +157,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="anime">
       <a href="https://www.youtube.com/watch?v=fiYRQ8ciHjk">
       <img class="thumbnail" src="https://th.bing.com/th/id/OIP.IGd_4-WsUTGUf_R1DxoP-AAAAA?r=0&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3" alt="DC Video Thumbnail" />
+      <div class="video-duration">2:58</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -99,9 +174,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="anime">
       <a href="https://www.youtube.com/watch?v=22R0j8UKRzY">
       <img class="thumbnail" src="https://wallpapers.com/images/hd/naruto-shippuden-poster-wrvqucmh1u0z6kku.jpg" alt="The Boys Video Thumbnail" />
+      <div class="video-duration">4:07</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -115,9 +191,10 @@
     </div>
     </div>
 
-        <div class="container">
+        <div class="container" data-category="movies">
           <a href="https://www.youtube.com/watch?v=tmeOjFno6Do">
       <img class="thumbnail" src="https://wallpaperaccess.com/full/342047.jpg" alt="Marvel Video Thumbnail" />
+      <div class="video-duration">2:18</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -131,9 +208,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="dc">
       <a href="https://www.youtube.com/watch?v=ui37YKQ9AC4">
       <img class="thumbnail" src="https://tse3.mm.bing.net/th?id=OIP.1zfcodxu-sFAoL-n0K3OxQHaEo&pid=Api&P=0&h=180" alt="DC Video Thumbnail" />
+      <div class="video-duration">5:12</div>
       </a>
       <div class="details">
         <div class="details-grid">
@@ -147,9 +225,10 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-category="anime">
       <a href="https://www.youtube.com/watch?v=tlfUk4MDqZc">
         <img class="thumbnail" src="https://image.tmdb.org/t/p/original/4WT7zYFpe0fsbg6TitppiHddWAh.jpg" alt="The Boys Video Thumbnail" />
+        <div class="video-duration">1:45</div>
       </a>
         <div class="details">
         <div class="details-grid">
@@ -163,8 +242,8 @@
     </div>
     </div>
   </div>
+</div>
 
-
-
+<script src="script.js"></script>
 </body>
 </html>
