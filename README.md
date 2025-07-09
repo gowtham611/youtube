@@ -101,8 +101,7 @@ Contributions are welcome! Please open issues and pull requests for feature requ
 5. Open a Pull Request
 
 ## License
-
-[MIT](LICENSE)
+Not Licensed
 
 ## Acknowledgements
 
