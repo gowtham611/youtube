@@ -5,10 +5,8 @@ A feature-rich YouTube clone application built to demonstrate modern web develop
 ## Features
 
 - **Responsive Design**: Works seamlessly on desktops, tablets, and mobile devices.
-- **Video Streaming**: Stream videos in real-time with a customizable player.
 - **Search Functionality**: Find videos by keyword, category, or channel.
 - **Video Details Page**: View video titles, descriptions, statistics (views, likes), and related videos.
-- **Channel Pages**: Explore creator profiles and their uploaded videos.
 - **Comments Section**: Post, read, and interact with comments (if implemented).
 - **Dark/Light Mode**: Switch between themes for optimal viewing comfort.
 - **User Authentication**: Sign up, log in, and manage account (if implemented).
@@ -16,14 +14,10 @@ A feature-rich YouTube clone application built to demonstrate modern web develop
 
 ## Tech Stack
 
-- **Frontend**: React.js (or your framework), HTML5, CSS3, JavaScript/TypeScript
+- **Frontend**: HTML5, CSS3, JavaScript/TypeScript
 - **Backend**: Node.js, Express.js (if applicable)
 - **API**: YouTube Data API v3 (or mock API)
-- **Styling**: Tailwind CSS, Bootstrap, Material UI, or custom SCSS
-- **State Management**: Redux, Context API, or MobX
-- **Authentication**: JWT, OAuth, Firebase Auth (if applicable)
-- **Database**: MongoDB, PostgreSQL, or Firebase (if applicable)
-- **Deployment**: Vercel, Netlify, Heroku, or your preferred cloud platform
+
 
 ## Getting Started
 
