@@ -1,0 +1,22 @@
+    .header{
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left{
+        background-color: aqua;
+        width: 150px;
+    }
+    .middle{
+        max-width: 500px;
+        margin-left: 60px;
+        margin-right: 35px;
+        flex: 1;
+        background-color: chartreuse;
+    }
+    .right{
+        width: 200px;
+        background-color: darkorange;
+    }
